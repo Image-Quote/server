@@ -5,7 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_USER,{ useNewUrlParser : true});
+mongoose.connect(process.env.MONGO_USER, { useNewUrlParser : true});
 
 const cors = require('cors');
 var db = mongoose.connection;
@@ -21,6 +21,9 @@ app.use(cors());
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const downloadRouter = require('./routes/DownloadRoutes');
+var usersRouter = require('./routes/user');
+var uploadRouter = require('./routes/upload')
+
 
 
 // view engine setup
@@ -36,6 +39,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/downloads',downloadRouter);
+app.use('/user', usersRouter);
+app.use('/upload', uploadRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
