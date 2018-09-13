@@ -7,19 +7,21 @@ var logger = require('morgan');
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_USER,{ useNewUrlParser : true});
 
-const DownloadRoutes = require('./routes/DownloadRoutes');
-
+const cors = require('cors');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   // we're connected!
   console.log('Connected to DB');
 });
+
+var app = express();
+app.use(cors());
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const downloadRouter = require('./routes/DownloadRoutes');
 
-var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

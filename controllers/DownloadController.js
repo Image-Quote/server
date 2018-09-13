@@ -11,7 +11,6 @@ class DownloadController {
         const options = {
             directory : '../downloadTest'
         }
-
         download(url,options,(err)=>{
             if(!err){
                 res.status(200).json({ msg : "Download success"})
