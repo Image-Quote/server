@@ -4,10 +4,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors')
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_USER, { useNewUrlParser : true});
 
-const cors = require('cors');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
@@ -16,13 +16,13 @@ db.once('open', function() {
 });
 
 var app = express();
-app.use(cors());
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const downloadRouter = require('./routes/DownloadRoutes');
-var usersRouter = require('./routes/user');
+// var usersRouter = require('./routes/user');
 var uploadRouter = require('./routes/upload')
+var imagesRouter = require('./routes/images')
 
 
 
@@ -30,6 +30,7 @@ var uploadRouter = require('./routes/upload')
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+app.use(cors())
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -41,6 +42,8 @@ app.use('/users', usersRouter);
 app.use('/downloads',downloadRouter);
 app.use('/user', usersRouter);
 app.use('/upload', uploadRouter);
+app.use('/images', imagesRouter)
+
 
 
 // catch 404 and forward to error handler
