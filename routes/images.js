@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var {uploadImage, getAllImage} = require('../controllers/images')
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.get('/', getAllImage)
+router.post('/', uploadImage)
 
 module.exports = router;

@@ -8,7 +8,6 @@ const cors = require('cors')
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_USER, { useNewUrlParser : true});
 
-const cors = require('cors');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
@@ -17,12 +16,11 @@ db.once('open', function() {
 });
 
 var app = express();
-app.use(cors());
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const downloadRouter = require('./routes/DownloadRoutes');
-var usersRouter = require('./routes/user');
+// var usersRouter = require('./routes/user');
 var uploadRouter = require('./routes/upload')
 var imagesRouter = require('./routes/images')
 

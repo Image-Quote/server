@@ -19,3 +19,5 @@ const textDetect = function (imgUrl) {
             });
     })
 }
+
+module.exports = {textDetect}
