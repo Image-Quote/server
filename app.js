@@ -7,6 +7,8 @@ var logger = require('morgan');
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_USER,{ useNewUrlParser : true});
 
+const DownloadRoutes = require('./routes/DownloadRoutes');
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
@@ -15,6 +17,7 @@ db.once('open', function() {
 });
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const downloadRouter = require('./routes/DownloadRoutes');
 
 var app = express();
 
@@ -30,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/downloads',downloadRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
