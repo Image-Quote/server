@@ -11,8 +11,6 @@ router.post('/',
   images.multer.single('image'), 
   images.sendUploadToGCS,
   (req, res) => {
-    console.log('upload===================>');
-    
     res.send({
       status: 200,
       message: 'Your file is successfully uploaded',
