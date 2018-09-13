@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "iron-asset-213407",
+  "private_key_id": "ff988f1f18fb7fe0582d475ea1fe08f0f464abff",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2pMXoLQO0Y3ft\n0VNr/CKK1B/EOt/Kzvh/wD4Ui+lExuuzg7hBgjURO7Qb0GyIvUu8ta2q7n1U/w6Y\nwiZaDhUVl9I22RwEIWX5N/AirSt98lHHICcsm9hjjjkD95PyFYJ9x0GmAQqaseys\nVzc3+bTKA3jMX9fVMuK11OFMhPIIbmh2ckYnJlDY71UX1E+eyKaU02UoiIeoI+dK\nuQ279Zapfz9FWD9NadPzmAhv8v2Q7p7WPSNPiS8VsGVpB+FoJstI2+RDJiU+9soI\n9qFL994CimiG9wH3+3EsvM1vRT3SMe/xXVam8hpi7Hf9AMffVhdZLjIoSmo2Wwk0\nncKmr/i7AgMBAAECggEAD+VZA3iAz98vrbyKq1Ah532dGCncQV1Fu8SiV+JyFmt4\n/GzfM/WzowDUZO6ntjeXaGCoMUNuwrTXczcZObxBBy8+pfRmX6ZSfDVrSnFSODTH\nUPJ88QEip6OAqyuN2O4YpyluOWxHcn2VcM2/FLmVtlaarwWRFiacHEw0oZbD2TTb\nxhnmgwcEPnKkqzd4dx+rEk5r7Uq1H3dPVL7Y8JkPeBf25eKN3sUcubjLA8oK4uPI\nOKS5Bt3x3Ux3tW9Ftg7OA4qHI2x2Zk2leg+YGYM33X4Zq/I0drl7zbJWXNHXPuX8\n6Of3IbIcJwtCfZZxoiJE8FIYr0m4GEM8DcT9ZbPTfQKBgQDbwQBRdWwdCkHh6S2s\nkGO1DRzHUGpL4tlCtsEs2d8j7srJo3PIewLuQeogukOo5MVm2FCXPLgecMSI0LkB\nc3IOCtbVduAHH1COOBoLjPj5X8QMljB9es50fY26WT4OfVZ7tW1gwBPVos9/w8dz\nKJib5FTszgwfCF1XSckZxxXUVQKBgQDUxM83PDW0qlm9VXARLX3aDOqOoIh3O035\nJ+RDnmXi72RaUidwcQnbWy7mjdWhNugNasXpNvxEw4vC5ZiOpQZNPvPzHYdFn3bJ\nxq9pUMQUoqB00W5MX+KSPu1sojzzYXVognuOoN0flrDghIYqp+N4wILIadYx5ZqU\nxCXZ82wozwKBgQDGYmoDH9pGLShk5bjR/FfG7tt4I+SSNWyliY7DCr0jF0QC3Ih+\nCG8Q4HiYqw7BviVnPwkiPzKIaI1EZglegfYJL0fa1cJRK7fxbDw3CUEK/6VhJ4UH\nAoK3L1FvVXlsY0Jb0+G2YjCFwMFKOlgoYhHDSlJQpYLT0R1S282sc8oFMQKBgDDX\nTMndJGbog9kWd7c5vh4DwQQkja7xCiEbqyZqgfDqCxtAqJUDHcQg1k9OV6++Lt6F\nmBDE8nvGd5qxoad88klhHha8vISa6mW/Gh0O0TP7cOHgAXW+vP/dOhsp0tv7jzwC\nV+KRwrCxosCnKzU3fNwHNP5UbTre/fEQZa/2VOm5AoGABLgkFqOkmRIZDj92RiUT\n74IG7Fjb1xDJX+t2oJoOQ2+SFM+529A9Qn+wVGqYLvgfDVUKjkYSP7YSLRH0vRC8\nVXh+LO+M6tdWaLFvjJCYo/qUq9vify8MDXHeXsEDZEJAoeYMUYYpJT0Uz1QLuSL7\nFgX4AYtWef1qy5e6VDT7bIw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "itq-buckets@iron-asset-213407.iam.gserviceaccount.com",
+  "client_id": "113449143330672962382",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/itq-buckets%40iron-asset-213407.iam.gserviceaccount.com"
+}
