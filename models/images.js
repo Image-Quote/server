@@ -8,6 +8,7 @@ var imageSchema = new Schema({
     },
     url:String,
     text:String,
+    translate:String,
     countImage:Number
 })
 
