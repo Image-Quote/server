@@ -10,9 +10,11 @@ const uploadImage = function (req, res) {
         .then(text => {
             Image.create({
                 url:req.file.cloudStoragePublicUrl,
-                text:text.text
+                text:text.text,
+                translate: text.translate
             })
             .then(function(result){
+                // console.log(result);
                 res.status(200).json({
                     message:"image successfully saved to database",
                     data:result

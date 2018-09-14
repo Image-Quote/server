@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const multer  = require('multer');
 const upload = multer({ dest: 'uploads/' });
-// const { singleUpload } = require('../controllers/upload');
 const images = require('../helpers/images')
 
 router.get('/', (req, res) => {

@@ -22,12 +22,11 @@ module.exports = {
     },
     
     login: function(req,res){
-        // console.log(`hello`)
         let email = req.body.email
-
         User
             .findOne({ email:email })
             .then(user =>{
+                console.log(user);
                 let hash = user.password
                 if(decrypt(user.email, req.body.password, hash)){
                     return sign(user)
